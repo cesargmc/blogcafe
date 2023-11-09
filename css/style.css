@@ -291,19 +291,30 @@ img {
 }
 
 .campo {
-    display: flex;
-    margin-bottom: 2rem;
-    gap: 2rem;
+    display: grid;
 }
 
 .campo:last-of-type {
-    margin-bottom: 0;
+    margin-top: 1rem;
 }
 
-.campo__label {
-    flex: 0 0 9rem;
-    text-align: right;
+@media (min-width: 768px) {
+    .campo {
+        display: flex;
+        margin-bottom: 2rem;
+        gap: 2rem;
+    }
 
+    .campo:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .campo__label {
+        flex: 0 0 9rem;
+        text-align: right;
+    }
 }
 
 .campo__field {
